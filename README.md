@@ -1,13 +1,4 @@
 # portfolio
 
-A Clojure library designed to ... well, that part is up to you.
-
-## Usage
-
-FIXME
-
-## License
-
-Copyright © 2013 FIXME
-
-Distributed under the Eclipse Public License, the same as Clojure.
+Clojure code for looking up asset prices and rebalancing according to some percentage allocation. (Optimal allocation
+not included.)
