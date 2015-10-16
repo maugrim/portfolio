@@ -28,6 +28,6 @@
 (defn report [dollars allocation]
   (let [distribution (distribute dollars allocation)
         total (sum (map #(* (:price %) (:shares %)) distribution))]
-    {:assets distribution
+    {:assets (sort-by :symbol distribution)
      :value (cash total)
      :remainder (cash (- dollars total))}))
